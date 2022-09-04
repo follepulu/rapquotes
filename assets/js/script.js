@@ -62,10 +62,7 @@ const quotes = [
 
 btn.addEventListener('click', function() {
   let random = Math.floor(Math.random() * quotes.length)
-  if (random === temp) {
-    random = Math.floor(Math.random() * quotes.length)
-  }
+  random = Math.floor(Math.random() * quotes.length
   quote.textContent = quotes[random].quote
   info.textContent = quotes[random].info
-  temp = random
 })
